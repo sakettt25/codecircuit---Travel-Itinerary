@@ -5,7 +5,7 @@ const Loader = () => {
   const [letterIndex, setLetterIndex] = useState(0);
   const [showLogo, setShowLogo] = useState(false);
   const [logoScale, setLogoScale] = useState(1);
-  const companyName = 'WELCOME'; // ← changed here
+  const companyName = 'WELCOME';
 
   const letterVariants = {
     hidden: { opacity: 0, y: 10 },
@@ -46,7 +46,6 @@ const Loader = () => {
 
   return (
     <div className="flex justify-center items-center min-h-screen bg-black overflow-hidden relative">
-      {/* Glowing Aurora Background - BLUE/INDIGO THEME */}
       <div className="absolute w-[500px] h-[500px] bg-gradient-to-br from-blue-500 via-indigo-500 to-blue-700 rounded-full blur-3xl opacity-30 animate-pulse" />
 
       <div className="text-white text-center z-10">
@@ -114,7 +113,6 @@ const Loader = () => {
         )}
       </div>
 
-      {/* Overlay for background burst */}
       <motion.div
         className="absolute inset-0 bg-blue-500"
         initial={{ opacity: 0 }}
